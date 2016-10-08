@@ -67,13 +67,6 @@ class ControlTVC: UITableViewController {
         self.performSegue(withIdentifier: controlSelected.segue, sender: self)
 
     }
-    
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        //if segue.destination is
-        if segue.destination is CurrenciesVC {
-            let detail = segue.destination as! CurrenciesVC
-        }
-    }
 }
     /*
  //MARK: Navigation

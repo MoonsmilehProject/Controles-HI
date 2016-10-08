@@ -15,8 +15,9 @@
 		F4C3ED871DA95B4200180BFA /* Control.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4C3ED861DA95B4200180BFA /* Control.swift */; };
 		F4C3ED891DA95EDD00180BFA /* ControlTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4C3ED881DA95EDD00180BFA /* ControlTVC.swift */; };
 		F4C3ED8B1DA963BC00180BFA /* ControlTVCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4C3ED8A1DA963BC00180BFA /* ControlTVCell.swift */; };
-		F4C3ED911DA978D700180BFA /* CurrenciesVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4C3ED901DA978D700180BFA /* CurrenciesVC.swift */; };
-		F4C3ED951DA97B8400180BFA /* ProgressVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4C3ED941DA97B8400180BFA /* ProgressVC.swift */; };
+		F4C3ED911DA978D700180BFA /* PickerVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4C3ED901DA978D700180BFA /* PickerVC.swift */; };
+		F4C3ED951DA97B8400180BFA /* CurrenciesVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4C3ED941DA97B8400180BFA /* CurrenciesVC.swift */; };
+		F4C3ED981DA98A7F00180BFA /* ProgressVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4C3ED971DA98A7F00180BFA /* ProgressVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,8 +31,9 @@
 		F4C3ED861DA95B4200180BFA /* Control.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Control.swift; sourceTree = "<group>"; };
 		F4C3ED881DA95EDD00180BFA /* ControlTVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ControlTVC.swift; sourceTree = "<group>"; };
 		F4C3ED8A1DA963BC00180BFA /* ControlTVCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ControlTVCell.swift; sourceTree = "<group>"; };
-		F4C3ED901DA978D700180BFA /* CurrenciesVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CurrenciesVC.swift; sourceTree = "<group>"; };
-		F4C3ED941DA97B8400180BFA /* ProgressVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProgressVC.swift; sourceTree = "<group>"; };
+		F4C3ED901DA978D700180BFA /* PickerVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PickerVC.swift; sourceTree = "<group>"; };
+		F4C3ED941DA97B8400180BFA /* CurrenciesVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CurrenciesVC.swift; sourceTree = "<group>"; };
+		F4C3ED971DA98A7F00180BFA /* ProgressVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProgressVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -80,7 +82,8 @@
 		F4C3ED7D1DA9411200180BFA /* UI */ = {
 			isa = PBXGroup;
 			children = (
-				F4C3ED931DA97B2700180BFA /* SegmentedView */,
+				F4C3ED961DA98A4600180BFA /* ProgressView */,
+				F4C3ED931DA97B2700180BFA /* Currencies */,
 				F4C3ED921DA97B1500180BFA /* Web */,
 				F4C3ED8C1DA9765700180BFA /* Picker */,
 				F4C3ED851DA958C600180BFA /* FirstView */,
@@ -123,7 +126,7 @@
 		F4C3ED8C1DA9765700180BFA /* Picker */ = {
 			isa = PBXGroup;
 			children = (
-				F4C3ED901DA978D700180BFA /* CurrenciesVC.swift */,
+				F4C3ED901DA978D700180BFA /* PickerVC.swift */,
 			);
 			name = Picker;
 			sourceTree = "<group>";
@@ -135,12 +138,20 @@
 			name = Web;
 			sourceTree = "<group>";
 		};
-		F4C3ED931DA97B2700180BFA /* SegmentedView */ = {
+		F4C3ED931DA97B2700180BFA /* Currencies */ = {
 			isa = PBXGroup;
 			children = (
-				F4C3ED941DA97B8400180BFA /* ProgressVC.swift */,
+				F4C3ED941DA97B8400180BFA /* CurrenciesVC.swift */,
 			);
-			name = SegmentedView;
+			name = Currencies;
+			sourceTree = "<group>";
+		};
+		F4C3ED961DA98A4600180BFA /* ProgressView */ = {
+			isa = PBXGroup;
+			children = (
+				F4C3ED971DA98A7F00180BFA /* ProgressVC.swift */,
+			);
+			name = ProgressView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -216,10 +227,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F4C3ED911DA978D700180BFA /* CurrenciesVC.swift in Sources */,
-				F4C3ED951DA97B8400180BFA /* ProgressVC.swift in Sources */,
+				F4C3ED911DA978D700180BFA /* PickerVC.swift in Sources */,
+				F4C3ED951DA97B8400180BFA /* CurrenciesVC.swift in Sources */,
 				F4C3ED6C1DA93CB300180BFA /* AppDelegate.swift in Sources */,
 				F4C3ED8B1DA963BC00180BFA /* ControlTVCell.swift in Sources */,
+				F4C3ED981DA98A7F00180BFA /* ProgressVC.swift in Sources */,
 				F4C3ED891DA95EDD00180BFA /* ControlTVC.swift in Sources */,
 				F4C3ED871DA95B4200180BFA /* Control.swift in Sources */,
 			);

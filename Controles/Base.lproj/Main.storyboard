@@ -273,10 +273,10 @@
             </objects>
             <point key="canvasLocation" x="1644" y="2203"/>
         </scene>
-        <!--View Controller-->
+        <!--ProgressVC-->
         <scene sceneID="diK-yd-iJv">
             <objects>
-                <viewController id="xkz-wX-7Fh" sceneMemberID="viewController">
+                <viewController id="xkz-wX-7Fh" customClass="ProgressVC" customModule="Controles" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="BRv-CQ-Yb8"/>
                         <viewControllerLayoutGuide type="bottom" id="jJS-DH-e3r"/>
@@ -285,7 +285,7 @@
                         <rect key="frame" x="0.0" y="64" width="375" height="603"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ngC-CW-P3R">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Presiona + o - para cambiar el progreso" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ngC-CW-P3R">
                                 <constraints>
                                     <constraint firstAttribute="height" constant="38" id="y0K-vT-JMJ"/>
                                 </constraints>
@@ -293,16 +293,19 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" progress="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="qLb-aL-Wnv">
+                            <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="qLb-aL-Wnv">
                                 <color key="progressTintColor" red="0.15481636030000001" green="0.59593983589999999" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                             </progressView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Presiona + o - para cambiar el progreso" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0ae-yG-pXf">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="El progreso es de 0%" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0ae-yG-pXf">
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <stepper opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" maximumValue="1" stepValue="0.10000000000000001" translatesAutoresizingMaskIntoConstraints="NO" id="mgZ-oS-wR8">
                                 <color key="tintColor" red="0.15481636030000001" green="0.59593983589999999" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <connections>
+                                    <action selector="stepperChangedWithSender:" destination="xkz-wX-7Fh" eventType="valueChanged" id="Emx-sl-xCl"/>
+                                </connections>
                             </stepper>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -321,6 +324,11 @@
                             <constraint firstItem="ngC-CW-P3R" firstAttribute="leading" secondItem="qLb-aL-Wnv" secondAttribute="leading" id="z7Y-pP-A6l"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="lblProgress" destination="0ae-yG-pXf" id="xDY-3d-Wl4"/>
+                        <outlet property="pvProgress" destination="qLb-aL-Wnv" id="W8V-Yo-jVA"/>
+                        <outlet property="stpStepper" destination="mgZ-oS-wR8" id="XQ0-zF-cDm"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="YPv-yT-rAH" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
