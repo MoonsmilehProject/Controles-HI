@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<array>
+	<dict>
+		<key>title</key>
+		<string>Picker View</string>
+		<key>subtitle</key>
+		<string>Vista que contiene un picker view, etiqueta y un botòn</string>
+		<key>icon</key>
+		<string></string>
+		<key>segue</key>
+		<string>Picker</string>
+	</dict>
+	<dict>
+		<key>title</key>
+		<string>Segmented Control</string>
+		<key>subtitle</key>
+		<string>Vista que tiene un segmented conttrol, etiquetas, slider y switch.</string>
+		<key>icon</key>
+		<string></string>
+		<key>segue</key>
+		<string>Segmented</string>
+	</dict>
+	<dict>
+		<key>title</key>
+		<string>TextView</string>
+		<key>subtitle</key>
+		<string>Vista que tiene un textfield, textview, botòn dentro de un scroll</string>
+		<key>icon</key>
+		<string></string>
+		<key>segue</key>
+		<string>TextView</string>
+	</dict>
+	<dict>
+		<key>title</key>
+		<string>Progress View</string>
+		<key>subtitle</key>
+		<string>Vista que tiene un progress view que se llena con un stepper.</string>
+		<key>icon</key>
+		<string></string>
+		<key>segue</key>
+		<string>Progress</string>
+	</dict>
+	<dict>
+		<key>title</key>
+		<string>WebView</string>
+		<key>subtitle</key>
+		<string>Vista que carga una pàgina de internet.</string>
+		<key>icon</key>
+		<string></string>
+		<key>segue</key>
+		<string>Web</string>
+	</dict>
+</array>
+</plist>

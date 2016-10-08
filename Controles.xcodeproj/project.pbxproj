@@ -8,20 +8,24 @@
 
 /* Begin PBXBuildFile section */
 		F4C3ED6C1DA93CB300180BFA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4C3ED6B1DA93CB300180BFA /* AppDelegate.swift */; };
-		F4C3ED6E1DA93CB300180BFA /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4C3ED6D1DA93CB300180BFA /* ViewController.swift */; };
 		F4C3ED711DA93CB300180BFA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F4C3ED6F1DA93CB300180BFA /* Main.storyboard */; };
 		F4C3ED731DA93CB300180BFA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F4C3ED721DA93CB300180BFA /* Assets.xcassets */; };
 		F4C3ED761DA93CB300180BFA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F4C3ED741DA93CB300180BFA /* LaunchScreen.storyboard */; };
+		F4C3ED831DA9587900180BFA /* MenuContent.plist in Resources */ = {isa = PBXBuildFile; fileRef = F4C3ED821DA9587900180BFA /* MenuContent.plist */; };
+		F4C3ED871DA95B4200180BFA /* Control.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4C3ED861DA95B4200180BFA /* Control.swift */; };
+		F4C3ED891DA95EDD00180BFA /* ControlTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4C3ED881DA95EDD00180BFA /* ControlTVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		F4C3ED681DA93CB300180BFA /* Controles.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Controles.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F4C3ED6B1DA93CB300180BFA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		F4C3ED6D1DA93CB300180BFA /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		F4C3ED701DA93CB300180BFA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		F4C3ED721DA93CB300180BFA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F4C3ED751DA93CB300180BFA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F4C3ED771DA93CB300180BFA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F4C3ED821DA9587900180BFA /* MenuContent.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = MenuContent.plist; sourceTree = "<group>"; };
+		F4C3ED861DA95B4200180BFA /* Control.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Control.swift; sourceTree = "<group>"; };
+		F4C3ED881DA95EDD00180BFA /* ControlTVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ControlTVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,14 +58,56 @@
 		F4C3ED6A1DA93CB300180BFA /* Controles */ = {
 			isa = PBXGroup;
 			children = (
+				F4C3ED841DA958A800180BFA /* Assets */,
+				F4C3ED801DA941BF00180BFA /* Networking */,
+				F4C3ED7E1DA9414900180BFA /* Model */,
+				F4C3ED7D1DA9411200180BFA /* UI */,
 				F4C3ED6B1DA93CB300180BFA /* AppDelegate.swift */,
-				F4C3ED6D1DA93CB300180BFA /* ViewController.swift */,
 				F4C3ED6F1DA93CB300180BFA /* Main.storyboard */,
 				F4C3ED721DA93CB300180BFA /* Assets.xcassets */,
 				F4C3ED741DA93CB300180BFA /* LaunchScreen.storyboard */,
 				F4C3ED771DA93CB300180BFA /* Info.plist */,
 			);
 			path = Controles;
+			sourceTree = "<group>";
+		};
+		F4C3ED7D1DA9411200180BFA /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				F4C3ED851DA958C600180BFA /* FirstView */,
+			);
+			name = UI;
+			sourceTree = "<group>";
+		};
+		F4C3ED7E1DA9414900180BFA /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				F4C3ED861DA95B4200180BFA /* Control.swift */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		F4C3ED801DA941BF00180BFA /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Networking;
+			sourceTree = "<group>";
+		};
+		F4C3ED841DA958A800180BFA /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+				F4C3ED821DA9587900180BFA /* MenuContent.plist */,
+			);
+			name = Assets;
+			sourceTree = "<group>";
+		};
+		F4C3ED851DA958C600180BFA /* FirstView */ = {
+			isa = PBXGroup;
+			children = (
+				F4C3ED881DA95EDD00180BFA /* ControlTVC.swift */,
+			);
+			name = FirstView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -126,6 +172,7 @@
 				F4C3ED761DA93CB300180BFA /* LaunchScreen.storyboard in Resources */,
 				F4C3ED731DA93CB300180BFA /* Assets.xcassets in Resources */,
 				F4C3ED711DA93CB300180BFA /* Main.storyboard in Resources */,
+				F4C3ED831DA9587900180BFA /* MenuContent.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -136,8 +183,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F4C3ED6E1DA93CB300180BFA /* ViewController.swift in Sources */,
 				F4C3ED6C1DA93CB300180BFA /* AppDelegate.swift in Sources */,
+				F4C3ED891DA95EDD00180BFA /* ControlTVC.swift in Sources */,
+				F4C3ED871DA95B4200180BFA /* Control.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -260,7 +308,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = Controles/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = mx.com.moonsmileh.Controles;
+				PRODUCT_BUNDLE_IDENTIFIER = mx.com.moonsmileh.controllcollection;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
 			};
@@ -272,7 +320,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = Controles/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = mx.com.moonsmileh.Controles;
+				PRODUCT_BUNDLE_IDENTIFIER = mx.com.moonsmileh.controllcollection;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
 			};
