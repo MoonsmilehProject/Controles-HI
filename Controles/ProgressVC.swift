@@ -19,11 +19,9 @@ class ProgressVC: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-       // lblSegmented.text = scSegmented.selectedSegmentIndex
-        
-
-        // Do any additional setup after loading the view.
+        lblSegmented.text = "Mi moneda es USD"
+        lblSlider.text = "El valor del slider es: \(sldSlider.value)"
+        lblSwitch.text = "El Switch está apagado"
     }
 
     override func didReceiveMemoryWarning() {

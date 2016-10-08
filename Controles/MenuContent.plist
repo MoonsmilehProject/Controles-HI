@@ -30,7 +30,7 @@
 		<key>icon</key>
 		<string>v2</string>
 		<key>segue</key>
-		<string>TextView</string>
+		<string>Stepper</string>
 	</dict>
 	<dict>
 		<key>title</key>
@@ -40,7 +40,7 @@
 		<key>icon</key>
 		<string>v3</string>
 		<key>segue</key>
-		<string>Progress</string>
+		<string>TextView</string>
 	</dict>
 	<dict>
 		<key>title</key>
