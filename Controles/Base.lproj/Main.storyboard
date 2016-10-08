@@ -334,10 +334,10 @@
             </objects>
             <point key="canvasLocation" x="2356" y="1415"/>
         </scene>
-        <!--View Controller-->
+        <!--WebVC-->
         <scene sceneID="k7K-e5-QhT">
             <objects>
-                <viewController id="j4X-Jr-eDU" sceneMemberID="viewController">
+                <viewController id="j4X-Jr-eDU" customClass="WebVC" customModule="Controles" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="g2s-4s-X2B"/>
                         <viewControllerLayoutGuide type="bottom" id="mQe-FH-z5v"/>
@@ -358,6 +358,9 @@
                             <constraint firstItem="gTf-WI-76r" firstAttribute="leading" secondItem="v9v-0b-o41" secondAttribute="leading" id="tEx-wJ-1uD"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="wvWeb" destination="gTf-WI-76r" id="wfm-eN-znw"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="bCk-ZK-Qqy" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

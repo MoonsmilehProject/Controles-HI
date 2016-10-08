@@ -18,6 +18,7 @@
 		F4C3ED911DA978D700180BFA /* PickerVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4C3ED901DA978D700180BFA /* PickerVC.swift */; };
 		F4C3ED951DA97B8400180BFA /* CurrenciesVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4C3ED941DA97B8400180BFA /* CurrenciesVC.swift */; };
 		F4C3ED981DA98A7F00180BFA /* ProgressVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4C3ED971DA98A7F00180BFA /* ProgressVC.swift */; };
+		F4C3ED9A1DA98FF000180BFA /* WebVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4C3ED991DA98FF000180BFA /* WebVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,6 +35,7 @@
 		F4C3ED901DA978D700180BFA /* PickerVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PickerVC.swift; sourceTree = "<group>"; };
 		F4C3ED941DA97B8400180BFA /* CurrenciesVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CurrenciesVC.swift; sourceTree = "<group>"; };
 		F4C3ED971DA98A7F00180BFA /* ProgressVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProgressVC.swift; sourceTree = "<group>"; };
+		F4C3ED991DA98FF000180BFA /* WebVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WebVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -134,6 +136,7 @@
 		F4C3ED921DA97B1500180BFA /* Web */ = {
 			isa = PBXGroup;
 			children = (
+				F4C3ED991DA98FF000180BFA /* WebVC.swift */,
 			);
 			name = Web;
 			sourceTree = "<group>";
@@ -232,6 +235,7 @@
 				F4C3ED6C1DA93CB300180BFA /* AppDelegate.swift in Sources */,
 				F4C3ED8B1DA963BC00180BFA /* ControlTVCell.swift in Sources */,
 				F4C3ED981DA98A7F00180BFA /* ProgressVC.swift in Sources */,
+				F4C3ED9A1DA98FF000180BFA /* WebVC.swift in Sources */,
 				F4C3ED891DA95EDD00180BFA /* ControlTVC.swift in Sources */,
 				F4C3ED871DA95B4200180BFA /* Control.swift in Sources */,
 			);
