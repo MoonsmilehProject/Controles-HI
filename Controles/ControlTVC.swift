@@ -11,6 +11,7 @@ import UIKit
 class ControlTVC: UITableViewController {
     
     var controlArray : [Control]!
+    var controlSelected : Control!
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -56,5 +57,33 @@ class ControlTVC: UITableViewController {
         
     }
 
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        
+        // Despitar selección de celda
+        tableView.deselectRow(at: indexPath, animated: true)
+        // Seleccion de control
+        controlSelected = controlArray[indexPath.row]
+        // Transiction a pantalla
+        self.performSegue(withIdentifier: controlSelected.segue, sender: self)
+
+    }
     
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        //if segue.destination is
+        if segue.destination is CurrenciesVC {
+            let detail = segue.destination as! CurrenciesVC
+        }
+    }
 }
+    /*
+ //MARK: Navigation
+ override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+ //Reviso que el destinatario sea del tipo CountryDetailVC
+ if segue.destination is CountryDetailVC{
+ //hago conversion de UIViewController a CountryDetailVC
+ let detail =  segue.destination as! CountryDetailVC
+ //Le pasamos el país
+ detail.selectedCountry = selectedCountry
+ }
+ }
+ */
