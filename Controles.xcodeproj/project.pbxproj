@@ -14,6 +14,7 @@
 		F4C3ED831DA9587900180BFA /* MenuContent.plist in Resources */ = {isa = PBXBuildFile; fileRef = F4C3ED821DA9587900180BFA /* MenuContent.plist */; };
 		F4C3ED871DA95B4200180BFA /* Control.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4C3ED861DA95B4200180BFA /* Control.swift */; };
 		F4C3ED891DA95EDD00180BFA /* ControlTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4C3ED881DA95EDD00180BFA /* ControlTVC.swift */; };
+		F4C3ED8B1DA963BC00180BFA /* ControlTVCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4C3ED8A1DA963BC00180BFA /* ControlTVCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 		F4C3ED821DA9587900180BFA /* MenuContent.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = MenuContent.plist; sourceTree = "<group>"; };
 		F4C3ED861DA95B4200180BFA /* Control.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Control.swift; sourceTree = "<group>"; };
 		F4C3ED881DA95EDD00180BFA /* ControlTVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ControlTVC.swift; sourceTree = "<group>"; };
+		F4C3ED8A1DA963BC00180BFA /* ControlTVCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ControlTVCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,6 +108,7 @@
 			isa = PBXGroup;
 			children = (
 				F4C3ED881DA95EDD00180BFA /* ControlTVC.swift */,
+				F4C3ED8A1DA963BC00180BFA /* ControlTVCell.swift */,
 			);
 			name = FirstView;
 			sourceTree = "<group>";
@@ -184,6 +187,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F4C3ED6C1DA93CB300180BFA /* AppDelegate.swift in Sources */,
+				F4C3ED8B1DA963BC00180BFA /* ControlTVCell.swift in Sources */,
 				F4C3ED891DA95EDD00180BFA /* ControlTVC.swift in Sources */,
 				F4C3ED871DA95B4200180BFA /* Control.swift in Sources */,
 			);

@@ -14,6 +14,7 @@ class ControlTVC: UITableViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.title = "Controles"
         controlArray = []
         // Acceso a archivo plist
         if let pathFile = Bundle.main.path(forResource: "MenuContent", ofType: "plist") {
@@ -44,7 +45,14 @@ class ControlTVC: UITableViewController {
     }
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "ControlCell", for: <#T##IndexPath#>)
+       let cell = tableView.dequeueReusableCell(withIdentifier: "ControlCell", for: indexPath) as! ControlTVCell
+        
+        let control = controlArray[indexPath.row]
+        cell.lblTitle.text = control.title
+        cell.lblSubtitle.text = control.subtitle
+        cell.ivIcon.image = UIImage(named: control.icon)
+        
+        return cell
         
     }
 

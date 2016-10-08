@@ -343,49 +343,54 @@
         <!--Root View Controller-->
         <scene sceneID="ubT-tT-Bie">
             <objects>
-                <tableViewController id="wHL-CT-7Eb" sceneMemberID="viewController">
+                <tableViewController id="wHL-CT-7Eb" customClass="ControlTVC" customModule="Controles" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="90" sectionHeaderHeight="28" sectionFooterHeight="28" id="Bwo-oS-krw">
                         <rect key="frame" x="0.0" y="64" width="375" height="603"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="ControlCell" rowHeight="90" id="Qa1-2I-cHk">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="ControlCell" rowHeight="90" id="Qa1-2I-cHk" customClass="ControlTVCell" customModule="Controles" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="28" width="375" height="90"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Qa1-2I-cHk" id="PdY-Jh-f9d">
                                     <frame key="frameInset" width="342" height="89"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
-                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="YwP-LN-ZUR">
-                                            <constraints>
-                                                <constraint firstAttribute="width" constant="40" id="XcP-9G-aVv"/>
-                                            </constraints>
-                                        </imageView>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Title" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aOo-mQ-bXH">
-                                            <fontDescription key="fontDescription" name="AppleSDGothicNeo-Bold" family="Apple SD Gothic Neo" pointSize="32"/>
+                                            <fontDescription key="fontDescription" type="boldSystem" pointSize="28"/>
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Subtitle" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ily-2b-8ml">
-                                            <fontDescription key="fontDescription" name="AppleSDGothicNeo-Regular" family="Apple SD Gothic Neo" pointSize="17"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Image" translatesAutoresizingMaskIntoConstraints="NO" id="YwP-LN-ZUR">
+                                            <constraints>
+                                                <constraint firstAttribute="width" constant="50" id="XcP-9G-aVv"/>
+                                            </constraints>
+                                        </imageView>
                                     </subviews>
                                     <constraints>
-                                        <constraint firstAttribute="bottomMargin" secondItem="YwP-LN-ZUR" secondAttribute="bottom" constant="33" id="6K6-37-oBv"/>
+                                        <constraint firstAttribute="bottomMargin" secondItem="YwP-LN-ZUR" secondAttribute="bottom" constant="12" id="6K6-37-oBv"/>
                                         <constraint firstItem="ily-2b-8ml" firstAttribute="top" secondItem="PdY-Jh-f9d" secondAttribute="topMargin" constant="21" id="6Nv-JV-o2S"/>
                                         <constraint firstAttribute="bottomMargin" secondItem="aOo-mQ-bXH" secondAttribute="bottom" constant="42" id="EMR-9r-7LI"/>
-                                        <constraint firstItem="YwP-LN-ZUR" firstAttribute="top" secondItem="aOo-mQ-bXH" secondAttribute="top" id="Ipu-6s-08W"/>
+                                        <constraint firstItem="YwP-LN-ZUR" firstAttribute="top" secondItem="aOo-mQ-bXH" secondAttribute="top" constant="12" id="Ipu-6s-08W"/>
                                         <constraint firstItem="aOo-mQ-bXH" firstAttribute="trailing" secondItem="ily-2b-8ml" secondAttribute="trailing" id="WDD-3B-bZY"/>
                                         <constraint firstItem="YwP-LN-ZUR" firstAttribute="leading" secondItem="PdY-Jh-f9d" secondAttribute="leadingMargin" id="jVB-FH-zDu"/>
-                                        <constraint firstItem="aOo-mQ-bXH" firstAttribute="leading" secondItem="YwP-LN-ZUR" secondAttribute="trailing" constant="8" symbolic="YES" id="jbP-Ng-7e5"/>
-                                        <constraint firstItem="YwP-LN-ZUR" firstAttribute="top" secondItem="PdY-Jh-f9d" secondAttribute="topMargin" id="nCL-v5-Yb5"/>
+                                        <constraint firstItem="aOo-mQ-bXH" firstAttribute="leading" secondItem="YwP-LN-ZUR" secondAttribute="trailing" constant="13" id="jbP-Ng-7e5"/>
+                                        <constraint firstItem="YwP-LN-ZUR" firstAttribute="top" secondItem="PdY-Jh-f9d" secondAttribute="topMargin" constant="12" id="nCL-v5-Yb5"/>
                                         <constraint firstItem="aOo-mQ-bXH" firstAttribute="leading" secondItem="ily-2b-8ml" secondAttribute="leading" id="u7q-p4-dYB"/>
                                         <constraint firstItem="aOo-mQ-bXH" firstAttribute="trailing" secondItem="PdY-Jh-f9d" secondAttribute="trailingMargin" id="xnX-R7-v19"/>
                                         <constraint firstAttribute="bottom" secondItem="ily-2b-8ml" secondAttribute="bottom" id="zoF-n6-BCC"/>
                                     </constraints>
                                 </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="ivIcon" destination="YwP-LN-ZUR" id="lPW-Ao-mbR"/>
+                                    <outlet property="lblSubtitle" destination="ily-2b-8ml" id="Eg3-Xg-6QU"/>
+                                    <outlet property="lblTitle" destination="aOo-mQ-bXH" id="WIR-QO-wfP"/>
+                                </connections>
                             </tableViewCell>
                         </prototypes>
                         <connections>
@@ -480,4 +485,7 @@
             <point key="canvasLocation" x="1663" y="728"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="Image" width="72" height="72"/>
+    </resources>
 </document>

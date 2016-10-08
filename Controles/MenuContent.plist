@@ -6,9 +6,9 @@
 		<key>title</key>
 		<string>Picker View</string>
 		<key>subtitle</key>
-		<string>Vista que contiene un picker view, etiqueta y un botòn</string>
+		<string>Vista que contiene un picker view, etiqueta y un botón</string>
 		<key>icon</key>
-		<string></string>
+		<string>v0</string>
 		<key>segue</key>
 		<string>Picker</string>
 	</dict>
@@ -18,7 +18,7 @@
 		<key>subtitle</key>
 		<string>Vista que tiene un segmented conttrol, etiquetas, slider y switch.</string>
 		<key>icon</key>
-		<string></string>
+		<string>v1</string>
 		<key>segue</key>
 		<string>Segmented</string>
 	</dict>
@@ -26,9 +26,9 @@
 		<key>title</key>
 		<string>TextView</string>
 		<key>subtitle</key>
-		<string>Vista que tiene un textfield, textview, botòn dentro de un scroll</string>
+		<string>Vista que tiene un textfield, textview, botón dentro de un scroll</string>
 		<key>icon</key>
-		<string></string>
+		<string>v2</string>
 		<key>segue</key>
 		<string>TextView</string>
 	</dict>
@@ -38,7 +38,7 @@
 		<key>subtitle</key>
 		<string>Vista que tiene un progress view que se llena con un stepper.</string>
 		<key>icon</key>
-		<string></string>
+		<string>v3</string>
 		<key>segue</key>
 		<string>Progress</string>
 	</dict>
@@ -46,9 +46,9 @@
 		<key>title</key>
 		<string>WebView</string>
 		<key>subtitle</key>
-		<string>Vista que carga una pàgina de internet.</string>
+		<string>Vista que carga una página de internet.</string>
 		<key>icon</key>
-		<string></string>
+		<string>v4</string>
 		<key>segue</key>
 		<string>Web</string>
 	</dict>
